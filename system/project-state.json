@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "project": "apppulse",
+  "status": "in_progress",
+  "coordination_mode": "single_writer",
+  "primary_agent": "codex",
+  "handoff_agents": ["antigravity"],
+  "current_owner": "codex",
+  "branch": "codex/add-repository-overview",
+  "last_verified_commit": "7246c36",
+  "last_verified_at": "2026-07-07T03:20:00+09:00",
+  "current_milestone": "Establish safe core tests and a reproducible Windows development baseline.",
+  "next_actions": [
+    "Add ranking integration tests with isolated SQLite data.",
+    "Validate ADB collection using explicit test-device setup."
+  ],
+  "blockers": [
+    "ADB integration verification requires a user-authorized Android test device.",
+    "UI and notification verification require an interactive Windows session."
+  ],
+  "verification": {
+    "unittest": "6 safe core tests passed",
+    "compile": "python -m compileall passed",
+    "github_actions": "Workflow added; first run pending"
+  },
+  "updated_at": "2026-07-07T03:20:00+09:00"
+}
