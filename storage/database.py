@@ -1,7 +1,7 @@
 import sqlite3
 import threading
 from contextlib import contextmanager
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from config import DB_PATH
 
@@ -125,8 +125,7 @@ def insert_usage_events_batch(events):
 
 
 def get_usage_events(device_id=None, days=30):
-    cutoff = datetime.now()
-    cutoff = cutoff.replace(day=max(1, cutoff.day - days) if days < 28 else 1)
+    cutoff = datetime.now() - timedelta(days=max(days, 0))
     sql = "SELECT * FROM usage_events WHERE timestamp >= ?"
     params = [cutoff.isoformat()]
     if device_id:
