@@ -6,9 +6,9 @@
   "primary_agent": "codex",
   "handoff_agents": ["antigravity"],
   "current_owner": "codex",
-  "branch": "codex/add-repository-overview",
-  "last_verified_commit": "7246c36",
-  "last_verified_at": "2026-07-07T03:20:00+09:00",
+  "branch": "main",
+  "last_verified_commit": "85e0c78eb83945b6b8c99c7c1d24d49c4cf9c80a",
+  "last_verified_at": "2026-07-07T04:40:53+09:00",
   "current_milestone": "Establish safe core tests and a reproducible Windows development baseline.",
   "next_actions": [
     "Add ranking integration tests with isolated SQLite data.",
@@ -21,7 +21,7 @@
   "verification": {
     "unittest": "6 safe core tests passed",
     "compile": "python -m compileall passed",
-    "github_actions": "Workflow added; first run pending"
+    "github_actions": "https://github.com/ymtezo/apppulse/actions/runs/28818229845 passed"
   },
-  "updated_at": "2026-07-07T03:20:00+09:00"
+  "updated_at": "2026-07-07T04:40:53+09:00"
 }
