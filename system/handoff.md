@@ -18,3 +18,14 @@
   - authorized test deviceでADB境界を検証
 - Constraints:
   - uninstallと実データ収集を自動testで実行しない
+
+
+---
+
+## 2026-07-10 JST — Agent-ready issue tracking link added
+- Agent: Codex
+- Status: DONE
+- Issue: https://github.com/ymtezo/apppulse/issues/1
+- Change: README now links to the current agent-ready GitHub issue and local state/handoff files.
+- Validation: Markdown-only change; no runtime validation required.
+

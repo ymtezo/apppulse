@@ -1,4 +1,4 @@
-# AppPulse
+﻿# AppPulse
 
 Windowsと接続したAndroid端末のアプリ利用状況を収集・保存・分析し、利用頻度の低いアプリと代替候補を提示するPythonツールです。
 
@@ -26,3 +26,11 @@ Windowsと接続したAndroid端末のアプリ利用状況を収集・保存・
 python -m unittest discover -s tests -v
 python -m compileall -q .
 ```
+
+## Project Tracking
+
+- Current agent-ready issue: [[agent-task] Establish safe core tests and a reproducible Windows development baseline.](https://github.com/ymtezo/apppulse/issues/1)
+- Local state: `system/project-state.json`
+- Local handoff: `system/handoff.md`
+
+
