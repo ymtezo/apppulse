@@ -105,12 +105,20 @@ class UsageTracker(
             try {
                 val isSystem = (appInfo.flags and ApplicationInfo.FLAG_SYSTEM) != 0
                 val appName = packageManager.getApplicationLabel(appInfo).toString()
+                val installedAt = try {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                        packageManager.getPackageInfo(appInfo.packageName, PackageManager.PackageInfoFlags.of(0)).firstInstallTime
+                    } else {
+                        @Suppress("DEPRECATION")
+                        packageManager.getPackageInfo(appInfo.packageName, 0).firstInstallTime
+                    }
+                } catch (e: Exception) { 0L }
 
                 repository.upsertInstalledApp(
                     InstalledAppEntity(
                         packageName = appInfo.packageName,
                         appName = appName,
-                        installedAt = appInfo.firstInstallTime,
+                        installedAt = installedAt,
                         lastSeen = now,
                         deviceId = deviceId,
                         isSystemApp = isSystem,
