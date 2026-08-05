@@ -2,6 +2,8 @@ name: Release AppPulse
 
 on:
   push:
+    branches-ignore:
+      - '**'
     tags:
       - 'v*'
   workflow_dispatch:
@@ -9,6 +11,12 @@ on:
       tag:
         description: 'Release tag (e.g. v1.0.0)'
         required: true
+
+env:
+  KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+  KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+  KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+  KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
 
 jobs:
   release:
@@ -39,18 +47,12 @@ jobs:
           ./gradlew assembleRelease
 
       - name: Decode keystore
-        if: ${{ secrets.KEYSTORE_BASE64 != '' }}
-        env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        if: env.KEYSTORE_BASE64 != ''
         run: |
           echo "$KEYSTORE_BASE64" | base64 -d > app/keystore.jks
 
       - name: Sign release APK
-        if: ${{ secrets.KEYSTORE_BASE64 != '' }}
-        env:
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        if: env.KEYSTORE_BASE64 != ''
         run: |
           APKSIGNER=$(find "$ANDROID_HOME/build-tools" -name apksigner -type f | sort -r | head -1)
           "$APKSIGNER" sign \
@@ -62,7 +64,7 @@ jobs:
             --out app-release.apk
 
       - name: Rename unsigned APK when not signing
-        if: ${{ secrets.KEYSTORE_BASE64 == '' }}
+        if: env.KEYSTORE_BASE64 == ''
         run: |
           cp app/build/outputs/apk/release/app-release-unsigned.apk app-release.apk
 
