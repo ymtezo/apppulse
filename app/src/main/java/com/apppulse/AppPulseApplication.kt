@@ -2,6 +2,7 @@ package com.apppulse
 
 import android.app.Application
 import android.util.Log
+import com.apppulse.ota.OtaUpdateWorker
 import com.apppulse.worker.WeeklyReportWorker
 
 class AppPulseApplication : Application() {
@@ -11,6 +12,11 @@ class AppPulseApplication : Application() {
             WeeklyReportWorker.schedule(this)
         } catch (e: Exception) {
             Log.e(TAG, "Failed to schedule weekly report worker", e)
+        }
+        try {
+            OtaUpdateWorker.schedule(this)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to schedule OTA worker", e)
         }
     }
 
