@@ -1,4 +1,22 @@
-# AppPulse Android
+# AppPulse
+
+使用頻度の低いアプリを検出し、代替アプリを提案する使用状況トラッカー。
+Android アプリと、Windows から ADB 経由で扱う Python ツールの2本立て。
+
+| ディレクトリ | 内容 |
+|---|---|
+| `app/` ほか | **Android アプリ**(Kotlin / Compose / Room / WorkManager)。以下の説明はこちら |
+| [`python-tool/`](python-tool/) | **Windows 側の Python ツール**。ADB で接続した端末の利用状況を SQLite に蓄積し、低利用アプリと代替候補を提示する |
+
+以前は `ymtezo/apppulse`(private / Python)と `ymtezo/apppulse-android`(public / Kotlin)に
+分かれていた。同じ製品の両輪なのに公開範囲も履歴も別々だったため、
+2026-08-20 にここへ**履歴ごと**統合し、全体を public にした。
+統合前に Python 側の全履歴50ブロブを走査し、鍵・トークン・`.env` の混入が
+無いことを確認している(`.github` の `secrets.*` は参照式であり値ではない)。
+
+---
+
+## Android アプリ
 
 Android アプリ使用状況トラッカー。使用頻度の低いアプリを検出し、代替アプリを提案する。
 
