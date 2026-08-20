@@ -1,13 +1,19 @@
-name: Test
+name: Test (python-tool)
 
 on:
   push:
-    branches: [main, codex/add-repository-overview]
+    branches: [main]
+    paths: ['python-tool/**', '.github/workflows/python-tool-test.yml']
   pull_request:
+    paths: ['python-tool/**', '.github/workflows/python-tool-test.yml']
   workflow_dispatch:
 
 permissions:
   contents: read
+
+defaults:
+  run:
+    working-directory: python-tool
 
 jobs:
   test:
