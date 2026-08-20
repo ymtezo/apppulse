@@ -1,0 +1,206 @@
+{
+  "Google Chrome": {
+    "category": "browser",
+    "alternatives": [
+      {"name": "Brave Browser", "winget_id": "Brave.Brave", "reason": "広告ブロック内蔵、高速ブラウジング"},
+      {"name": "Firefox", "winget_id": "Mozilla.Firefox", "reason": "プライバシー重視、拡張機能豊富"},
+      {"name": "Vivaldi", "winget_id": "VivaldiTechnologies.Vivaldi", "reason": "高カスタマイズ性、タブ管理が強力"}
+    ]
+  },
+  "Brave Browser": {
+    "category": "browser",
+    "alternatives": [
+      {"name": "Firefox", "winget_id": "Mozilla.Firefox", "reason": "プライバシー重視、Mozilla財団が開発"},
+      {"name": "Vivaldi", "winget_id": "VivaldiTechnologies.Vivaldi", "reason": "高カスタマイズ性"}
+    ]
+  },
+  "Mozilla Firefox": {
+    "category": "browser",
+    "alternatives": [
+      {"name": "Brave Browser", "winget_id": "Brave.Brave", "reason": "Chromiumベース、広告ブロック内蔵"},
+      {"name": "Vivaldi", "winget_id": "VivaldiTechnologies.Vivaldi", "reason": "高カスタマイズ性"}
+    ]
+  },
+  "VLC media player": {
+    "category": "media_player",
+    "alternatives": [
+      {"name": "mpv", "winget_id": "mpv.net", "reason": "軽量・高速、キーボード操作に最適"},
+      {"name": "PotPlayer", "winget_id": "Daum.PotPlayer", "reason": "GPU加速、多機能"}
+    ]
+  },
+  "Notepad++": {
+    "category": "text_editor",
+    "alternatives": [
+      {"name": "VS Code", "winget_id": "Microsoft.VisualStudioCode", "reason": "拡張機能エコシステムが充実"},
+      {"name": "Sublime Text", "winget_id": "SublimeHQ.SublimeText.4", "reason": "起動が速い、軽量"}
+    ]
+  },
+  "Visual Studio Code": {
+    "category": "ide",
+    "alternatives": [
+      {"name": "Cursor", "winget_id": "Anysphere.Cursor", "reason": "AI統合IDE、VS Code互換"},
+      {"name": "Zed", "winget_id": "Zed.Zed", "reason": "超高速、Rust製エディタ"}
+    ]
+  },
+  "Slack": {
+    "category": "communication",
+    "alternatives": [
+      {"name": "Discord", "winget_id": "Discord.Discord", "reason": "無料で高機能、音声チャットが強力"},
+      {"name": "Element", "winget_id": "Element.Element", "reason": "オープンソース、Matrix プロトコル"}
+    ]
+  },
+  "Discord": {
+    "category": "communication",
+    "alternatives": [
+      {"name": "Element", "winget_id": "Element.Element", "reason": "プライバシー重視、分散型"},
+      {"name": "Guilded", "winget_id": "Guilded.Guilded", "reason": "ゲーマー向け、無料機能が多い"}
+    ]
+  },
+  "Zoom": {
+    "category": "video_conferencing",
+    "alternatives": [
+      {"name": "Google Meet", "winget_id": null, "reason": "ブラウザで動作、インストール不要"},
+      {"name": "Jitsi Meet", "winget_id": null, "reason": "オープンソース、ブラウザで使用可能"}
+    ]
+  },
+  "Adobe Acrobat": {
+    "category": "pdf",
+    "alternatives": [
+      {"name": "Sumatra PDF", "winget_id": "SumatraPDF.SumatraPDF", "reason": "超軽量、高速表示"},
+      {"name": "Okular", "winget_id": "KDE.Okular", "reason": "多機能、注釈対応"}
+    ]
+  },
+  "7-Zip": {
+    "category": "archive",
+    "alternatives": [
+      {"name": "PeaZip", "winget_id": "Giorgiotani.Peazip", "reason": "GUI改善、暗号化対応"},
+      {"name": "NanaZip", "winget_id": "M2Team.NanaZip", "reason": "Windows 11に最適化"}
+    ]
+  },
+  "WinRAR": {
+    "category": "archive",
+    "alternatives": [
+      {"name": "7-Zip", "winget_id": "7zip.7zip", "reason": "無料・オープンソース、高圧縮率"},
+      {"name": "NanaZip", "winget_id": "M2Team.NanaZip", "reason": "Windows 11ネイティブ対応"}
+    ]
+  },
+  "Spotify": {
+    "category": "music",
+    "alternatives": [
+      {"name": "foobar2000", "winget_id": "PeterPawlowski.foobar2000", "reason": "軽量、ローカル音楽管理に最適"},
+      {"name": "AIMP", "winget_id": "AIMP.AIMP", "reason": "軽量、高音質再生"}
+    ]
+  },
+  "iTunes": {
+    "category": "music",
+    "alternatives": [
+      {"name": "foobar2000", "winget_id": "PeterPawlowski.foobar2000", "reason": "軽量、プラグイン対応"},
+      {"name": "MusicBee", "winget_id": "MusicBee.MusicBee", "reason": "高機能、ライブラリ管理が優秀"}
+    ]
+  },
+  "OBS Studio": {
+    "category": "screen_recording",
+    "alternatives": [
+      {"name": "ShareX", "winget_id": "ShareX.ShareX", "reason": "スクリーンショット + 録画、多機能"},
+      {"name": "ScreenToGif", "winget_id": "NickeManarin.ScreenToGif", "reason": "GIF作成に特化、軽量"}
+    ]
+  },
+  "GIMP": {
+    "category": "image_editor",
+    "alternatives": [
+      {"name": "Krita", "winget_id": "KDE.Krita", "reason": "デジタルペイントに強い、UI改善"},
+      {"name": "Paint.NET", "winget_id": "dotPDN.PaintDotNet", "reason": "軽量、Windows向け最適化"}
+    ]
+  },
+  "Adobe Photoshop": {
+    "category": "image_editor",
+    "alternatives": [
+      {"name": "GIMP", "winget_id": "GIMP.GIMP", "reason": "無料・オープンソース、多機能"},
+      {"name": "Affinity Photo", "winget_id": "Serif.AffinityPhoto2", "reason": "買い切り、プロ向け"}
+    ]
+  },
+  "Docker Desktop": {
+    "category": "container",
+    "alternatives": [
+      {"name": "Rancher Desktop", "winget_id": "suse.RancherDesktop", "reason": "オープンソース、k8s内蔵"},
+      {"name": "Podman Desktop", "winget_id": "RedHat.Podman-Desktop", "reason": "デーモンレス、rootless対応"}
+    ]
+  },
+  "Postman": {
+    "category": "api_client",
+    "alternatives": [
+      {"name": "Bruno", "winget_id": "Bruno.Bruno", "reason": "オフライン対応、Git管理しやすい"},
+      {"name": "Insomnia", "winget_id": "Kong.Insomnia", "reason": "軽量、GraphQL対応"}
+    ]
+  },
+  "Obsidian": {
+    "category": "note_taking",
+    "alternatives": [
+      {"name": "Logseq", "winget_id": "Logseq.Logseq", "reason": "アウトライナー型、オープンソース"},
+      {"name": "Notion", "winget_id": "Notion.Notion", "reason": "チーム共有、データベース機能"}
+    ]
+  },
+  "Notion": {
+    "category": "note_taking",
+    "alternatives": [
+      {"name": "Obsidian", "winget_id": "Obsidian.Obsidian", "reason": "ローカルファースト、Markdown"},
+      {"name": "Logseq", "winget_id": "Logseq.Logseq", "reason": "オープンソース、アウトライナー型"}
+    ]
+  },
+  "CCleaner": {
+    "category": "system_cleaner",
+    "alternatives": [
+      {"name": "BleachBit", "winget_id": "BleachBit.BleachBit", "reason": "オープンソース、安全"},
+      {"name": "Windows ディスククリーンアップ", "winget_id": null, "reason": "OS標準搭載、追加ソフト不要"}
+    ]
+  },
+  "TeamViewer": {
+    "category": "remote_desktop",
+    "alternatives": [
+      {"name": "RustDesk", "winget_id": "RustDesk.RustDesk", "reason": "オープンソース、セルフホスト可能"},
+      {"name": "AnyDesk", "winget_id": "AnyDeskSoftware.AnyDesk", "reason": "軽量、低遅延"}
+    ]
+  },
+  "Thunderbird": {
+    "category": "email",
+    "alternatives": [
+      {"name": "Betterbird", "winget_id": "Betterbird.Betterbird", "reason": "Thunderbirdフォーク、UI改善"},
+      {"name": "eM Client", "winget_id": "eMClient.eMClient", "reason": "モダンUI、カレンダー統合"}
+    ]
+  },
+  "KeePass": {
+    "category": "password_manager",
+    "alternatives": [
+      {"name": "KeePassXC", "winget_id": "KeePassXCTeam.KeePassXC", "reason": "クロスプラットフォーム、モダンUI"},
+      {"name": "Bitwarden", "winget_id": "Bitwarden.Bitwarden", "reason": "クラウド同期、ブラウザ拡張"}
+    ]
+  },
+  "WinSCP": {
+    "category": "file_transfer",
+    "alternatives": [
+      {"name": "FileZilla", "winget_id": "TimKosse.FileZilla.Client", "reason": "FTP/SFTP対応、安定性"},
+      {"name": "Cyberduck", "winget_id": "Cyberduck.Cyberduck", "reason": "クラウドストレージ対応"}
+    ]
+  },
+  "PuTTY": {
+    "category": "terminal",
+    "alternatives": [
+      {"name": "Windows Terminal", "winget_id": "Microsoft.WindowsTerminal", "reason": "OS標準、タブ対応、SSH内蔵"},
+      {"name": "MobaXterm", "winget_id": "Mobatek.MobaXterm", "reason": "統合ターミナル、X11対応"}
+    ]
+  },
+  "Audacity": {
+    "category": "audio_editor",
+    "alternatives": [
+      {"name": "Tenacity", "winget_id": null, "reason": "Audacityフォーク、テレメトリなし"},
+      {"name": "Ocenaudio", "winget_id": "Ocenaudio.Ocenaudio", "reason": "軽量、リアルタイムプレビュー"}
+    ]
+  },
+  "Paint": {
+    "category": "simple_image_editor",
+    "alternatives": [
+      {"name": "Paint.NET", "winget_id": "dotPDN.PaintDotNet", "reason": "レイヤー対応、軽量"},
+      {"name": "Pinta", "winget_id": "PintaProject.Pinta", "reason": "シンプル、クロスプラットフォーム"}
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "project": "apppulse",
+  "status": "in_progress",
+  "coordination_mode": "single_writer",
+  "primary_agent": "codex",
+  "handoff_agents": ["antigravity"],
+  "current_owner": "codex",
+  "branch": "main",
+  "last_verified_commit": "85e0c78eb83945b6b8c99c7c1d24d49c4cf9c80a",
+  "last_verified_at": "2026-07-07T04:40:53+09:00",
+  "current_milestone": "Establish safe core tests and a reproducible Windows development baseline.",
+  "next_actions": [
+    "Add ranking integration tests with isolated SQLite data.",
+    "Validate ADB collection using explicit test-device setup."
+  ],
+  "blockers": [
+    "ADB integration verification requires a user-authorized Android test device.",
+    "UI and notification verification require an interactive Windows session."
+  ],
+  "verification": {
+    "unittest": "6 safe core tests passed",
+    "compile": "python -m compileall passed",
+    "github_actions": "https://github.com/ymtezo/apppulse/actions/runs/28818229845 passed"
+  },
+  "updated_at": "2026-07-07T04:40:53+09:00"
+}
