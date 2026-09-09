@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> ### 📦 このリポジトリは統合・移行されました
+> 本リポジトリの機能プロンプトおよびソースコードは、統合スイート **[ControlTower2026](https://github.com/ymtezo/ControlTower2026/tree/main/subsider/apppulse)** へ集約されました。  
+> 今後の閲覧・保守・開発は **[ControlTower2026](https://github.com/ymtezo/ControlTower2026/tree/main/subsider/apppulse)** をご参照ください。
+
+---
 # AppPulse
 
 使用頻度の低いアプリを検出し、代替アプリを提案する使用状況トラッカー。
